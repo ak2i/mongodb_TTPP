@@ -1,4 +1,4 @@
-var users = 100;
+var users = 1000;
 var maxHours = 48;
 
 var startDate = new Date('2017/03/01 00:00:00');
@@ -33,26 +33,26 @@ for(var uid = 1; uid <= users; uid++) {
     },
     place : {
       from : {
-        placeName : fromM.placeName,
-		    placeAddressCity : fromM.placeAddressCity,
-		    placeGeo : fromM.placeGeo,
-        placeId : fromM.placeId,
-        placeZip : fromM.placeZip,
-        placeAddressBloc : fromM.placeAddressBloc,
-        placeAddress1 : fromM.placeAddress1,
-        placeAddress2 : fromM.placeAddress2,
-        placeAddress3 : fromM.placeAddress3
+        Name : fromM.placeName,
+		    AddressCity : fromM.placeAddressCity,
+		    Geo : fromM.placeGeo,
+        Id : fromM.placeId,
+        Zip : fromM.placeZip,
+        AddressBloc : fromM.placeAddressBloc,
+        Address1 : fromM.placeAddress1,
+        Address2 : fromM.placeAddress2,
+        Address3 : fromM.placeAddress3
       },
       to : {
-        placeName : toM.placeName,
-		    placeAddressCity : toM.placeAddressCity,
-		    placeGeo : toM.placeGeo,
-        placeId : toM.placeId,
-        placeZip : toM.placeZip,
-        placeAddressBloc : toM.placeAddressBloc,
-        placeAddress1 : toM.placeAddress1,
-        placeAddress2 : toM.placeAddress2,
-        placeAddress3 : toM.placeAddress3
+        Name : toM.placeName,
+		    AddressCity : toM.placeAddressCity,
+		    Geo : toM.placeGeo,
+        Id : toM.placeId,
+        Zip : toM.placeZip,
+        AddressBloc : toM.placeAddressBloc,
+        Address1 : toM.placeAddress1,
+        Address2 : toM.placeAddress2,
+        Address3 : toM.placeAddress3
       }
     },
     value : {
