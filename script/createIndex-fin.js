@@ -10,12 +10,15 @@ db.track_demo.createIndex({placeAddress3:1});
 db.track_demo.createIndex({trackId:1});
 db.track_demo.createIndex({twDatetime:1});
 db.track_demo.createIndex({twHour:1});
+db.track_demo.createIndex({twDay:1});
 
 db.ttpp_demo.createIndex({trackId:1});
 db.ttpp_demo.createIndex({"timeWindow.from.Datetime":1});
 db.ttpp_demo.createIndex({"timeWindow.from.Hour":1});
+db.ttpp_demo.createIndex({"timeWindow.from.Day":1});
 db.ttpp_demo.createIndex({"timeWindow.to.Datetime":1});
 db.ttpp_demo.createIndex({"timeWindow.to.Hour":1});
+db.ttpp_demo.createIndex({"timeWindow.to.Day":1});
 db.ttpp_demo.createIndex({"place.from.Id":1});
 db.ttpp_demo.createIndex({"place.from.Name":1});
 db.ttpp_demo.createIndex({"place.from.Zip":1});

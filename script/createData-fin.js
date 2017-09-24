@@ -3,6 +3,7 @@ var maxHours = 48;
 
 var startDate = new Date('2017/03/01 00:00:00');
 var rangeHours = 24 * 30 * 3;
+var days = ['日','月','火','水','木','金','土'];
 
 var makeTTPP = function(trackId, model, fromM, toM) {
 	var vdth = model.valueDistanceTwHours;
@@ -66,9 +67,11 @@ for(var uid = 1; uid <= users; uid++) {
 		fromM.trackId = trackId;
 		fromM.twDatetime = std;
 		fromM.twHour = twHour;
+		fromM.twDay = days[std.getDay()];
 		toM.trackId = trackId;
 		toM.twDatetime = todate;
 		toM.twHour = todate.getHours();
+		toM.twDay = days[todate.getDay()];
 		db.track_demo.insert(fromM);
 		db.track_demo.insert(toM);
 		var ttpp = makeTTPP(trackId, model, fromM, toM);
@@ -88,9 +91,11 @@ for(var uid = 1; uid <= users; uid++) {
 				fromM.trackId = trackId;
 				fromM.twDatetime = std;
 				fromM.twHour = twHour;
+				fromM.twDay = days[std.getDay()];
 				toM.trackId = trackId;
 				toM.twDatetime = todate;
 				toM.twHour = todate.getHours();
+				toM.twDay = days[todate.getDay()];
 				db.track_demo.insert(fromM);
 				db.track_demo.insert(toM);
 				ttpp = makeTTPP(trackId, model, fromM, toM);
