@@ -1,5 +1,9 @@
 # TrackId, TimeWindow, Place data Pair Framework sample data and query for MongoDB
 
+本マテリアル集（スクリプト集）は人流解析などに使えるデータ構造TTPPを実際にMongoDB上で体験するためのシミュレーションデータ生成スクリプトとサンプルクエリのセットとなります。TTPPそのものについては以下のスライドをご覧下さい。
+
+[SlideShare: Wi-Fiのassociation logを用いた人流解析にMongoDB使ってみた](https://www.slideshare.net/secret/byDZJzlwVu1IXy)
+
 ## データの準備
 
 以下のコマンドでローカルに立ち上げているMongoDBのDBインスタンス"TTPP"に二つのCollectionが生成されます。
