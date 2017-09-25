@@ -1,4 +1,4 @@
-var users = 1000;
+var users = 100;
 var maxHours = 24;
 
 var startDate = new Date('2017/03/01 00:00:00');
